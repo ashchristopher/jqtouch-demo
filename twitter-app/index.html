@@ -4,6 +4,7 @@
         <title>Twitter-App</title>
         
         <link rel="stylesheet" href="/static/jqtouch/jqtouch/jqtouch.css" type="text/css" media="screen" charset="utf-8" />        
+        <link rel="stylesheet" href="/static/jqtouch/themes/apple/theme.css" type="text/css" media="screen" charset="utf-8" />        
         
         <script type="text/javascript" src='/static/jquery.js'></script>
         <script type="text/javascript" src='/static/jqtouch/jqtouch/jqtouch.js'></script>
@@ -11,6 +12,49 @@
     </head>
 
     <body>
-    
+        <div id='home' class='current'>
+            <div class='toolbar'>
+                <h1>New Tweets</h1>
+            </div>
+            <div class='content'>
+                <ul class='rounded'>
+                    <li class='arrow'>
+                        <a href='#the-tweets' class='flip'>Get me some tweets</a>
+                    </li>
+                    <li class='arrow'>
+                        <a href='#about' class='slideup'>About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class='info'>
+                <p>Powered by awesome.</p>
+            </div>
+        </div>
+        
+        
+        <div id='about'>
+            <div class='toolbar'>
+                <a class="back">Back</a>
+                <h1>About</h1>
+            </div>
+            <div class='content'>
+                <p>This app gets the latest tweets from twitter.</p> 
+            </div>
+        </div>
+
+        
+        <div id='the-tweets'>
+            <div class='toolbar'>
+                <a class="back">Back</a>
+                <h1>Latest Tweets</h1>
+            </div>
+            <div class='content'>
+                <ul id='tweets'>
+                    
+                </ul>
+            </div>
+        </div>
+
+
     </body>
 </html>
